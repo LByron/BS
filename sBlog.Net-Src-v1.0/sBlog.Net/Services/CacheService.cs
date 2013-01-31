@@ -38,7 +38,7 @@ namespace sBlog.Net.Services
                                                  Cache.NoSlidingExpiration);
             }
 
-            Console.WriteLine("a");
+            
             return item;
 
 
