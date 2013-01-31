@@ -28,7 +28,15 @@ namespace sBlog.Net.Services
         public T Get<T>(string cacheID, Func<T> getItemCallback) where T : class
         {
             var item = HttpRuntime.Cache.Get(cacheID) as T;
-        
+            if (item == null)
+            {
+                item = getItemCallback();
+                HttpContext.Current.Cache.Insert(cacheID, 
+                                                 item, 
+                                                 null, 
+                                                 DateTime.Now.AddMinutes(ApplicationConfiguration.CacheDuration), 
+                                                 Cache.NoSlidingExpiration);
+            }
 
 
             return item;
