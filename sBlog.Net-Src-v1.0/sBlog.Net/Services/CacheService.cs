@@ -36,6 +36,10 @@ namespace sBlog.Net.Services
                                                  null, 
                                                  DateTime.Now.AddMinutes(ApplicationConfiguration.CacheDuration), 
                                                  Cache.NoSlidingExpiration);
+                Console.WriteLine();
+                Console.WriteLine();
+                Console.WriteLine();
+                Console.WriteLine();
             }
 
 
