@@ -17,9 +17,9 @@
 #endregion
 namespace sBlog.Net.ShortCodeManager
 {
-    public class SyntaxPossibilitiesViewModel
-    {
-        public SyntaxPossibilities SyntaxPossibilities { get; set; }
-        public bool IsEnabled { get; set; }
-    }
+    //public class SyntaxPossibilitiesViewModel
+    //{
+    //    public SyntaxPossibilities SyntaxPossibilities { get; set; }
+    //    public bool IsEnabled { get; set; }
+    //}
 }
