@@ -37,6 +37,8 @@ namespace sBlog.Net.Services
                                                  DateTime.Now.AddMinutes(ApplicationConfiguration.CacheDuration), 
                                                  Cache.NoSlidingExpiration);
             }
+
+
             return item;
         }
     }
